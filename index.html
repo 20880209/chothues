@@ -197,10 +197,10 @@
                     { name: "Hệ thống âm thanh tiệc", price: "Liên hệ", unit: "gói", img: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400" }
                 ],
                 reviews: [
-                    "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=300",
-                    "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=300",
-                    "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=300",
-                    "https://images.unsplash.com/photo-1514525253361-bee243870eb2?w=300"
+                    "./hinh/tivi_1.jpg",
+                    "./hinh/loa_1.jpg",
+                    "./hinh/loa-tivi_1.jpg",
+                    "./hinh/loa_2.jpg"
                 ]
             },
             bep: {
@@ -211,8 +211,10 @@
                     { name: "Lò nướng than", price: "50,000đ", unit: "ngày", img: "https://images.unsplash.com/photo-1526367790999-0150786486a9?w=400" }
                 ],
                 reviews: [
-                    "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=300",
-                    "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=300"
+                    "./hinh/tivi_1.jpg",
+                    "./hinh/loa_1.jpg",
+                    "./hinh/loa-tivi_1.jpg",
+                    "./hinh/loa_2.jpg"
                 ]
             },
             cokhi: {
@@ -223,7 +225,10 @@
                     { name: "Máy mài/Máy cắt tay", price: "100,000đ", unit: "ngày", img: "https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=400" }
                 ],
                 reviews: [
-                    "https://images.unsplash.com/photo-1504307651254-35680f3366d4?w=300"
+                    "./hinh/tivi_1.jpg",
+                    "./hinh/loa_1.jpg",
+                    "./hinh/loa-tivi_1.jpg",
+                    "./hinh/loa_2.jpg"
                 ]
             },
             xe: {
@@ -234,8 +239,10 @@
                     { name: "Xe đạp địa hình/phố", price: "100,000đ", unit: "ngày", img: "https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?w=400" }
                 ],
                 reviews: [
-                    "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=300",
-                    "https://images.unsplash.com/photo-1469033011394-4a11f2f60d43?w=300"
+                    "./hinh/tivi_1.jpg",
+                    "./hinh/loa_1.jpg",
+                    "./hinh/loa-tivi_1.jpg",
+                    "./hinh/loa_2.jpg"
                 ]
             },
             homestay: {
@@ -245,8 +252,10 @@
                     { name: "Villa hồ bơi (5-10PN)", price: "4,500,000đ", unit: "ngày", img: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=400" }
                 ],
                 reviews: [
-                    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=300",
-                    "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=300"
+                    "./hinh/tivi_1.jpg",
+                    "./hinh/loa_1.jpg",
+                    "./hinh/loa-tivi_1.jpg",
+                    "./hinh/loa_2.jpg"
                 ]
             }
         };
@@ -298,14 +307,14 @@
                     <div class="mb-10 text-center">
                         <h3 class="text-2xl font-black text-slate-900 mb-2 uppercase italic tracking-tight underline decoration-blue-500 underline-offset-8">CÁC DỰ ÁN ĐÃ HOÀN THÀNH</h3>
                     </div>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
                         ${data.reviews.map(url => `
-                            <div class="aspect-square rounded-3xl overflow-hidden shadow-sm border-4 border-slate-50">
-                                <img src="${url}" alt="Dự án thực tế" class="w-full h-full object-cover">
+                            <div class="rounded-3xl overflow-hidden shadow-sm border-4 border-slate-50 bg-slate-50">
+                                <img src="${url}" alt="Dự án thực tế" class="w-full h-auto object-contain">
                             </div>
                         `).join('')}
                         ${Array(4 - data.reviews.length).fill(0).map(() => `
-                            <div class="aspect-square rounded-3xl bg-slate-50 flex items-center justify-center border-2 border-dashed border-slate-200">
+                            <div class="aspect-[3/4] rounded-3xl bg-slate-50 flex items-center justify-center border-2 border-dashed border-slate-200 min-h-[300px]">
                                 <span class="text-slate-300 text-3xl font-bold">+</span>
                             </div>
                         `).join('')}
