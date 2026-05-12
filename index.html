@@ -197,10 +197,23 @@
                     { name: "Hệ thống âm thanh tiệc", price: "Liên hệ", unit: "gói", img: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400" }
                 ],
                 reviews: [
-                    "./hinh/tivi_1.jpg",
-                    "./hinh/loa_1.jpg",
-                    "./hinh/loa-tivi_1.jpg",
-                    "./hinh/loa_2.jpg"
+                    "./review/project_loa_1 (1).jpg",
+                    "./review/project_loa_1 (2).jpg",
+                    "./review/project_loa_1 (3).jpg",
+                    "./review/project_loa_1 (4).jpg",
+                    "./review/project_loa_1 (5).jpg",
+                    "./review/project_loa_1 (6).jpg",
+                    "./review/project_loa_1 (7).jpg",
+                    "./review/project_loa_1 (8).jpg",
+                    "./review/project_loa_1 (9).jpg",
+                    "./review/project_loa_1 (10).jpg",
+                    "./review/project_loa_1 (11).jpg",
+                    "./review/project_loa_1 (12).jpg",
+                    "./review/project_loa_1 (13).jpg",
+                    "./review/project_loa_1 (14).jpg",
+                    "./review/project_loa_1 (15).jpg",
+                    "./review/project_loa_1 (16).jpg",
+
                 ]
             },
             bep: {
@@ -256,6 +269,10 @@
                     "./hinh/loa_1.jpg",
                     "./hinh/loa-tivi_1.jpg",
                     "./hinh/loa_2.jpg"
+                    "./review/project_loa_1 (1).jpg",
+                    "./review/project_loa_1 (2).jpg",
+                    "./review/project_loa_1 (3).jpg",
+                    "./review/project_loa_1 (4).jpg"
                 ]
             }
         };
@@ -308,14 +325,19 @@
                         <h3 class="text-2xl font-black text-slate-900 mb-2 uppercase italic tracking-tight underline decoration-blue-500 underline-offset-8">CÁC DỰ ÁN ĐÃ HOÀN THÀNH</h3>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+                    <div class="grid grid-cols-4 gap-2 sm:gap-4 md:gap-6">
                         ${data.reviews.map(url => `
                             <div class="rounded-3xl overflow-hidden shadow-sm border-4 border-slate-50 bg-slate-50">
                                 <img src="${url}" alt="Dự án thực tế" class="w-full h-auto object-contain">
+                            <div class="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-sm border-2 border-slate-50 bg-slate-50">
+                                <img src="${url}" alt="Dự án thực tế" class="w-full h-full object-cover hover:scale-110 transition duration-300">
                             </div>
                         `).join('')}
                         ${Array(4 - data.reviews.length).fill(0).map(() => `
                             <div class="aspect-[3/4] rounded-3xl bg-slate-50 flex items-center justify-center border-2 border-dashed border-slate-200 min-h-[300px]">
                                 <span class="text-slate-300 text-3xl font-bold">+</span>
+                            <div class="aspect-square rounded-xl sm:rounded-2xl bg-slate-50 flex items-center justify-center border-2 border-dashed border-slate-200">
+                                <span class="text-slate-300 text-2xl font-bold">+</span>
                             </div>
                         `).join('')}
                     </div>
