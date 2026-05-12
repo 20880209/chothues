@@ -189,10 +189,10 @@
             amthanh: {
                 title: "Loa, Tivi, Karaoke, Âm Thanh",
                 items: [
-                    { name: "Tivi Samsung/Sony 50-65 inch", price: "500,000đ", unit: "ngày", img: "hinh/tivi_1.jpg" },
-                    { name: "Loa kéo - Karaoke", price: "300,000đ", unit: "ngày", img: "hinh/loa_1.jpg" },
-                    { name: "Set Loa kéo + Tivi 65 inch", price: "800,000đ", unit: "ngày", img: "hinh/loa-tivi_1.jpg" },
-                    { name: "Loa xách tay", price: "200,000đ", unit: "ngày", img: "hinh/loa_2.jpg" },
+                    { name: "Tivi Samsung/Sony 50-65 inch", price: "500,000đ", unit: "ngày", img: "./hinh/tivi_1.jpg" },
+                    { name: "Loa kéo - Karaoke", price: "300,000đ", unit: "ngày", img: "./hinh/loa_1.jpg" },
+                    { name: "Set Loa kéo + Tivi 65 inch", price: "800,000đ", unit: "ngày", img: "./hinh/loa-tivi_1.jpg" },
+                    { name: "Loa xách tay", price: "200,000đ", unit: "ngày", img: "./hinh/loa_2.jpg" },
                     { name: "Loa Marshall sành điệu", price: "300,000đ", unit: "ngày", img: "https://images.unsplash.com/photo-1589003077984-894e133dabab?w=400" },
                     { name: "Hệ thống âm thanh tiệc", price: "Liên hệ", unit: "gói", img: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400" }
                 ],
@@ -273,7 +273,7 @@
                     ${data.items.map(item => `
                         <div class="product-card bg-white rounded-[2rem] overflow-hidden shadow-sm border border-slate-100 flex flex-col">
                             <div class="h-56 relative overflow-hidden">
-                                <img src="${item.img}" alt="${item.name}" class="w-full h-full object-cover">
+                                <img src="${item.img}" alt="${item.name}" class="w-full h-full object-contain p-2 bg-slate-50">
                                 <div class="absolute top-4 left-4">
                                     <span class="bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-blue-600">Sẵn sàng</span>
                                 </div>
